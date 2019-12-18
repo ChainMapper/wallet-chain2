@@ -1,6 +1,6 @@
 FROM chainmapper/walletbase-bionic
 
-ENV WALLET_URL=https://github.com/chain2/chain2/releases/download/v0.11L/chain2-0.11.0-L-linux64.tar.gz
+ENV WALLET_URL=https://github.com/chain2/chain2/releases/download/v0.11M/chain2-0.11.0-M-linux64.tar.gz
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
