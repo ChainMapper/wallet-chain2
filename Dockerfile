@@ -1,4 +1,4 @@
-FROM chainmapper/walletbase-bionic
+FROM packages.netwatwezoeken.nl/chainmapper/wallet-base-bionic:latest
 
 ENV WALLET_URL=https://github.com/chain2/chain2/releases/download/v0.11O/chain2-0.11.0-O-linux64.tar.gz
 
