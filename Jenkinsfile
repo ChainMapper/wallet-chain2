@@ -11,7 +11,7 @@ def withPod(body) {
 withPod {
 	node(POD_LABEL) {
 		def tag = "${env.BRANCH_NAME.replaceAll('/', '-')}-${env.BUILD_NUMBER}"
-		if (env.BRANCH_NAME == 'master' && env.TAG_NAME ) {
+		if (env.TAG_NAME != null) {
             tag = env.TAG_NAME
         } else if (env.BRANCH_NAME == 'master') {
             tag = "latest"
